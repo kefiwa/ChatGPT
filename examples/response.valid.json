@@ -1,0 +1,27 @@
+{
+  "market": "XAUUSD",
+  "setup_type": "BUY_LIMIT",
+  "strategy_used": "ICT_SMC_Continuation_v1",
+  "timeframes_aligned": ["M", "W", "D", "H4", "H1"],
+  "higher_timeframe_bias": "bullish",
+  "entry_price": 2324.4,
+  "stop_loss": 2317.9,
+  "take_profit_1": 2337.4,
+  "take_profit_2": 2343.9,
+  "take_profit_3": 2350.4,
+  "risk_to_reward_ratio": 2.0,
+  "confidence_score": 82.5,
+  "event_risk_status": "CAUTION",
+  "news_summary": "US yields softer after dovish comments; metals bid in risk-off tone.",
+  "invalidation_rule": "Invalidate if H1 candle closes below protected order block low.",
+  "final_action": "WAIT",
+  "no_trade_reason": null,
+  "context": {
+    "findings": {
+      "liquidity_sweep": true,
+      "bos": true,
+      "fvg": true,
+      "order_block": true
+    }
+  }
+}

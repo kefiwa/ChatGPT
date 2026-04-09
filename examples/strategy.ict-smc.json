@@ -1,0 +1,31 @@
+{
+  "name": "ICT_SMC_Continuation_v1",
+  "description": "Liquidity sweep + BOS + FVG + OB continuation model with session liquidity gating.",
+  "required_confluences": [
+    "liquidity_sweep",
+    "bos",
+    "fvg",
+    "order_block",
+    "session_liquidity"
+  ],
+  "weights": {
+    "liquidity_sweep": 1.4,
+    "bos": 1.2,
+    "mss": 1.0,
+    "fvg": 1.2,
+    "order_block": 1.1,
+    "session_liquidity": 0.8,
+    "premium_discount": 0.8
+  },
+  "risk": {
+    "min_rr": 1.8,
+    "max_risk_per_trade_pct": 0.5,
+    "pre_news_safety_window_minutes": 120,
+    "min_confidence_score": 70
+  },
+  "entry_model": {
+    "preferred_entry": "limit_at_discount_or_premium",
+    "confirmation_timeframes": ["M15", "M5"],
+    "invalidate_on_h1_close_beyond_protected_swing": true
+  }
+}
