@@ -1,0 +1,22 @@
+{
+  "market": "GBPUSD",
+  "setup_type": "NO_TRADE",
+  "strategy_used": "ICT_SMC_Continuation_v1",
+  "timeframes_aligned": ["M", "W", "D"],
+  "higher_timeframe_bias": "bearish",
+  "entry_price": null,
+  "stop_loss": null,
+  "take_profit_1": null,
+  "take_profit_2": null,
+  "take_profit_3": null,
+  "risk_to_reward_ratio": null,
+  "confidence_score": 55.0,
+  "event_risk_status": "DO_NOT_ENTER_BEFORE_NEWS",
+  "news_summary": "BOE and US CPI high-impact releases are imminent.",
+  "invalidation_rule": "No setup - wait for cleaner structure.",
+  "final_action": "NO_TRADE",
+  "no_trade_reason": "Major high-impact event is too close",
+  "context": {
+    "reason_codes": ["NEWS_BLOCK", "LOW_CONFLUENCE"]
+  }
+}
